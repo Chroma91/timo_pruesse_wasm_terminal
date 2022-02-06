@@ -1,11 +1,9 @@
-#![cfg(target_arch = "wasm32")]
+#[cfg(test)]
+extern crate timo_pruesse_wasm_terminal;
 
-extern crate wasm_bindgen_test;
-use wasm_bindgen_test::*;
+use timo_pruesse_wasm_terminal::add;
 
-wasm_bindgen_test_configure!(run_in_browser);
-
-#[wasm_bindgen_test]
-fn pass() {
-    assert_eq!(1 + 1, 2);
+#[test]
+fn test_add() {
+    assert_eq!(add(1, 2), 3);
 }
