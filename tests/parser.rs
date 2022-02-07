@@ -1,14 +1,14 @@
 #[cfg(test)]
 extern crate timo_pruesse_wasm_terminal;
 
-use crate::timo_pruesse_wasm_terminal::command::TerminalCommand;
+use crate::timo_pruesse_wasm_terminal::commands::TerminalCommand;
 use timo_pruesse_wasm_terminal::parser::*;
 
 #[test]
 fn test_parse_command() {
-    let add_command = parse_command("add 1 2").unwrap();
+    let timo_command = parse_command("timo --version").unwrap();
 
-    assert_eq!(add_command.run().unwrap(), "3");
+    assert_eq!(timo_command.run().unwrap(), "v1.0.0");
 }
 
 #[test]

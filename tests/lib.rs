@@ -1,9 +1,13 @@
-#[cfg(test)]
-extern crate timo_pruesse_wasm_terminal;
+#![cfg(target_arch = "wasm32")]
 
-use timo_pruesse_wasm_terminal::add;
+extern crate wasm_bindgen_test;
+use wasm_bindgen_test::*;
 
-#[test]
-fn test_add() {
-    assert_eq!(add(1, 2), 3);
+use timo_pruesse_wasm_terminal::run_command;
+
+wasm_bindgen_test_configure!(run_in_browser);
+
+#[wasm_bindgen_test]
+fn test_run_command() {
+    assert_eq!(run_command(&"timo --version"), "v1.0.0");
 }

@@ -2,10 +2,17 @@ extern crate wasm_bindgen;
 
 use wasm_bindgen::prelude::*;
 
-pub mod command;
+pub mod commands;
 pub mod parser;
 
+use commands::TerminalCommand;
+
 #[wasm_bindgen]
-pub fn add(a: i32, b: i32) -> i32 {
-    a + b
+pub fn run_command(command_str: &str) -> String {
+    let command = parser::parse_command(command_str);
+
+    match command {
+        Ok(command) => command.run().unwrap(),
+        Err(error) => error,
+    }
 }
