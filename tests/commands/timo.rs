@@ -3,6 +3,7 @@ extern crate timo_pruesse_wasm_terminal;
 
 use timo_pruesse_wasm_terminal::commands::timo::TimoCommand;
 use timo_pruesse_wasm_terminal::commands::TerminalCommand;
+use timo_pruesse_wasm_terminal::utils::version::get_version;
 
 #[test]
 fn test_no_command() {
@@ -17,7 +18,7 @@ fn test_version_command() {
         args: vec!["--version".to_string()],
     };
 
-    assert_eq!(timo.run().unwrap(), "v1.0.0");
+    assert_eq!(timo.run().unwrap(), get_version());
 }
 
 #[test]

@@ -4,8 +4,7 @@ use wasm_bindgen::prelude::*;
 
 pub mod commands;
 pub mod parser;
-
-use commands::TerminalCommand;
+pub mod utils;
 
 #[wasm_bindgen]
 pub fn run_command(command_str: &str) -> String {
