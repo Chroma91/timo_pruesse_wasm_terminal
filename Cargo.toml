@@ -1,6 +1,6 @@
 [package]
 name = "timo_pruesse_wasm_terminal"
-version = "0.1.2"
+version = "0.2.0"
 edition = "2021"
 description = "A \"terminal interpreter\" for the commands that you can run on timo-pruesse.de"
 repository = "https://github.com/Chroma91/timo_pruesse_wasm_terminal"
@@ -13,10 +13,10 @@ crate-type = ["cdylib", "rlib"]
 [dependencies]
 wasm-bindgen = "0.2"
 chrono = "0.4"
-regex = "1"
 
 [dev-dependencies]
 wasm-bindgen-test = "0.3.13"
+regex = "1"
 
 [profile.release]
 lto = true
