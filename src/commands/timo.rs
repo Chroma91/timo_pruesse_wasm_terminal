@@ -9,10 +9,6 @@ pub struct TimoCommand {
 }
 
 impl TerminalCommand for TimoCommand {
-    fn get_description(&self) -> String {
-        return "namespace for all `timo` related commands".to_string();
-    }
-
     fn run(&self) -> Result<String, String> {
         let help_command = &TIMO_HELP_COMMAND_FLAG.to_string();
         let subcommand = self.args.get(0).or(Some(help_command)).unwrap();
