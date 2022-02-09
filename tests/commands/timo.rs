@@ -29,6 +29,6 @@ fn test_invalid_command() {
 
     assert_eq!(
         timo.run().unwrap_err(),
-        "timo_wasm: command not found: invalid"
+        "timo_wasm: timo: command not found: invalid"
     );
 }

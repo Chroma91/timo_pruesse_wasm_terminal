@@ -10,7 +10,7 @@ pub struct CatCommand {
 impl TerminalCommand for CatCommand {
     fn run(&self) -> Result<String, String> {
         let files: HashMap<&str, &str> = HashMap::from([(
-            "aboutme",
+            "~/aboutme",
             "
         Hi, my name is Timo 🙋‍♂️<br />
         I love teaching machines how to solve problems.

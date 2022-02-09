@@ -15,6 +15,6 @@ pub fn parse_command(command: &str) -> Result<Box<dyn TerminalCommand>, String> 
         LS_COMMAND_NAME => Ok(Box::new(LsCommand { args })),
         TIMO_COMMAND_NAME => Ok(Box::new(TimoCommand { args })),
         WHOAMI_COMMAND_NAME => Ok(Box::new(WhoamiCommand {})),
-        _ => Err(format!("Unknown command: {}", name)),
+        _ => Err(format!("timo_wasm: command not found: {}", name)),
     }
 }

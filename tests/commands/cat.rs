@@ -26,7 +26,7 @@ fn test_cat_command_unknown_file() {
 #[test]
 fn test_cat_command() {
     let cat = CatCommand {
-        args: vec!["aboutme".to_string()],
+        args: vec!["~/aboutme".to_string()],
     };
 
     assert!(cat.run().unwrap().len() > 0);
