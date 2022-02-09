@@ -12,7 +12,7 @@ pub fn parse_command(command: &str) -> Result<Box<dyn TerminalCommand>, String> 
 
     match name {
         CAT_COMMAND_NAME => Ok(Box::new(CatCommand { args })),
-        LS_COMMAND_NAME => Ok(Box::new(LsCommand {})),
+        LS_COMMAND_NAME => Ok(Box::new(LsCommand { args })),
         TIMO_COMMAND_NAME => Ok(Box::new(TimoCommand { args })),
         WHOAMI_COMMAND_NAME => Ok(Box::new(WhoamiCommand {})),
         _ => Err(format!("Unknown command: {}", name)),
