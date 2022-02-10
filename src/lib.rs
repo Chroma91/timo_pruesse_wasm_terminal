@@ -10,8 +10,8 @@ pub mod utils;
 pub fn run_command(command_str: &str) -> String {
     let command = parser::parse_command(command_str);
 
-    match command {
+    return match command {
         Ok(command) => command.run().unwrap(),
         Err(error) => error,
-    }
+    };
 }
