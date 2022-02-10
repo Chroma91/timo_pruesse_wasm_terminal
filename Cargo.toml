@@ -1,6 +1,6 @@
 [package]
 name = "timo_pruesse_wasm_terminal"
-version = "1.0.4"
+version = "1.2.0"
 edition = "2021"
 description = "A \"terminal interpreter\" for the commands that you can run on timo-pruesse.de"
 repository = "https://github.com/Chroma91/timo_pruesse_wasm_terminal"
@@ -13,6 +13,7 @@ crate-type = ["cdylib", "rlib"]
 [dependencies]
 wasm-bindgen = "0.2"
 chrono = { version = "0.4", features = ["wasmbind"] }
+typed-html = { git = "https://github.com/bodil/typed-html", rev = "e18d328951b6b9216976d180f3dea2e6600a3982" }
 
 [dev-dependencies]
 wasm-bindgen-test = "0.3.13"
