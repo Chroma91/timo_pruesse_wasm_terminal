@@ -1,4 +1,5 @@
 use crate::commands::cat::*;
+use crate::commands::echo::*;
 use crate::commands::ls::*;
 use crate::commands::timo::*;
 use crate::commands::whoami::*;
@@ -12,6 +13,7 @@ pub fn parse_command(command: &str) -> Result<Box<dyn TerminalCommand>, String> 
 
     match name {
         CAT_COMMAND_NAME => Ok(Box::new(CatCommand { args })),
+        ECHO_COMMAND_NAME => Ok(Box::new(EchoCommand { args })),
         LS_COMMAND_NAME => Ok(Box::new(LsCommand { args })),
         TIMO_COMMAND_NAME => Ok(Box::new(TimoCommand { args })),
         WHOAMI_COMMAND_NAME => Ok(Box::new(WhoamiCommand {})),

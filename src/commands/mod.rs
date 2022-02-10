@@ -3,6 +3,7 @@ pub trait TerminalCommand {
 }
 
 pub mod cat;
+pub mod echo;
 pub mod ls;
 pub mod timo;
 pub mod timo_get_contact;
