@@ -11,11 +11,8 @@ impl TerminalCommand for LsCommand {
     fn run(&self) -> Result<String, String> {
         if self.args.len() == 0 {
             return Ok("
-        |                |      |
-        |----------------|------|
-        | build | package-lock.json | src | tailwind.config.cjs
-        | node_modules | postcss.config.cjs | static | tsconfig.json
-        | package.json | README.md | svelte.config.js
+            build         package.json       postcss.config.cjs  src     svelte.config.js     tsconfig.json
+            node_modules  package-lock.json  README.md           static  tailwind.config.cjs
         "
             .to_string());
         }

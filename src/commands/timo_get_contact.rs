@@ -7,10 +7,9 @@ pub struct TimoGetContactCommand {}
 impl TerminalCommand for TimoGetContactCommand {
     fn run(&self) -> Result<String, String> {
         return Ok("
-            |              |                        |
-            |--------------|------------------------|
-            | email        | hi@timo-pruesse.de     |
-            | @niceoutside | https://www.no.studio/ |
+
+            email           [hi@timo-pruesse.de](mailto:hi@timo-pruesse.de)
+            @niceoutside    [https://www.no.studio/](no.studio)
         "
         .to_string());
     }

@@ -7,7 +7,7 @@ pub struct TimoStackCommand {}
 impl TerminalCommand for TimoStackCommand {
     fn run(&self) -> Result<String, String> {
         return Ok("
-        <br />
+
         Languages:
         | Daily Drivers | Experiments  |
         |---------------|--------------|
@@ -47,7 +47,7 @@ impl TerminalCommand for TimoStackCommand {
         | Daily Drivers | Experiments |
         |---------------|-------------|
         |               | Tensorflow  |
-        <br />
+
         "
         .to_string());
     }

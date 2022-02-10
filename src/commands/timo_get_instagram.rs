@@ -7,9 +7,8 @@ pub struct TimoGetInstagramCommand {}
 impl TerminalCommand for TimoGetInstagramCommand {
     fn run(&self) -> Result<String, String> {
         return Ok("
-            |                    |             |
-            |--------------------|-------------|
-            | Instagram username | timopruesse |
+
+            Instagram username   [timopruesse](https://www.instagram.com/timopruesse/)
         "
         .to_string());
     }

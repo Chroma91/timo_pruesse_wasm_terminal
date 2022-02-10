@@ -7,9 +7,8 @@ pub struct TimoGetTwitterCommand {}
 impl TerminalCommand for TimoGetTwitterCommand {
     fn run(&self) -> Result<String, String> {
         return Ok("
-            |                  |             |
-            |------------------|-------------|
-            | Twitter username | TimoPruesse |
+
+            Twitter username    [TimoPruesse](https://twitter.com/TimoPruesse)
         "
         .to_string());
     }

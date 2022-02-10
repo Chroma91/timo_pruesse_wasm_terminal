@@ -9,12 +9,10 @@ impl TerminalCommand for TimoSystemCommand {
         return Ok("
             WSL 2
 
-            |                |         |
-            |----------------|---------|
-            | Distributor ID | Debian  |
-            | Description    | Pengwin |
-            | Release        | 11      |
-            | Codename       | bullseye |
+            Distributor ID   Debian
+            Description      Pengwin
+            Release          11
+            Codename         bullseye
         "
         .to_string());
     }

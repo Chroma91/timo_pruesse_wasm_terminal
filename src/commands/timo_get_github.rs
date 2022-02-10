@@ -7,9 +7,8 @@ pub struct TimoGetGithubCommand {}
 impl TerminalCommand for TimoGetGithubCommand {
     fn run(&self) -> Result<String, String> {
         return Ok("
-            |                 |          |
-            |-----------------|----------|
-            | GitHub username | Chroma91 |
+
+            GitHub username     [Chroma91](https://github.com/Chroma91)
         "
         .to_string());
     }

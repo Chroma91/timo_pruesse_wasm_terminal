@@ -12,9 +12,9 @@ impl TerminalCommand for CatCommand {
         let files: HashMap<&str, &str> = HashMap::from([(
             "~/aboutme",
             "
-        Hi, my name is Timo 🙋‍♂️<br />
+        Hi, my name is Timo 🙋‍♂️
         I love teaching machines how to solve problems.
-        <br />
+
     ",
         )]);
 

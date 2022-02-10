@@ -9,22 +9,24 @@ impl TerminalCommand for TimoHelpCommand {
     fn run(&self) -> Result<String, String> {
         return Ok(format!(
             "
-        <br />
+
         Timo ({version})
-        <br />
+
         Usage:
-        <br />
-        |                |      |
-        |----------------|------|
-        | timo --help    | print this help message |
-        | timo --stack   | print tech stack |
-        | timo --version | print version |
-        |                |      |
-        | timo get:contact | gets contact info |
-        | timo get:github | gets GitHub name |
-        | timo get:twitter | gets Twitter name |
-        | timo get:instagram | gets Instagram name |
-        <br />
+
+        --help             print this help message
+        --stack            print tech stack
+        --version          print version
+
+        get:contact        gets contact info
+        get:github         gets GitHub name
+        get:twitter        gets Twitter name
+        get:instagram      gets Instagram name
+
+        Examples:
+            timo --version      print version
+            timo get:contact    get contact info
+
         ",
             version = get_version()
         ));
