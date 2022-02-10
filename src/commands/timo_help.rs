@@ -10,7 +10,7 @@ impl TerminalCommand for TimoHelpCommand {
         return Ok(format!(
             "
         <br />
-        {version}
+        Timo ({version})
         <br />
         Usage:
         <br />
