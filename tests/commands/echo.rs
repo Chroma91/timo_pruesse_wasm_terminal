@@ -19,3 +19,12 @@ fn test_echo_command_empty() {
 
     assert_eq!(echo.run().unwrap(), "");
 }
+
+#[test]
+fn test_echo_command_with_quotes() {
+    let echo = EchoCommand {
+        args: vec!["\"hello".to_string(), "world\"".to_string()],
+    };
+
+    assert_eq!(echo.run().unwrap(), "hello world");
+}
