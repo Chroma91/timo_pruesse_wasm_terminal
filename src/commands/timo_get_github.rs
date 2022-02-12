@@ -9,11 +9,10 @@ pub struct TimoGetGithubCommand {}
 impl TerminalCommand for TimoGetGithubCommand {
     fn run(&self) -> Result<String, String> {
         let body: DOMTree<String> = html!(
-        <div class="ml-10 mt-2 mb-4 flex gap-4">
+        <div style="margin:0.5rem 0 1rem 2.5rem;display:flex;gap:1rem">
             <span>"GitHub:"</span>
             <a
                 href="https://github.com/Chroma91"
-                class="hover:underline"
                 target="_blank"
                 // rel="noopener noreferrer" // TODO: fix this
             >"Chroma91"</a

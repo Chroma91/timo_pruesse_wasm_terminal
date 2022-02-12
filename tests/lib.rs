@@ -10,5 +10,5 @@ wasm_bindgen_test_configure!(run_in_browser);
 
 #[wasm_bindgen_test]
 fn test_run_command() {
-    assert_eq!(run_command(&"timo --system"), get_version());
+    assert_eq!(run_command(&"timo --version"), get_version());
 }

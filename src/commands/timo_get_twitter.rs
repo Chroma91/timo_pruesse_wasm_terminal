@@ -9,11 +9,10 @@ pub struct TimoGetTwitterCommand {}
 impl TerminalCommand for TimoGetTwitterCommand {
     fn run(&self) -> Result<String, String> {
         let body: DOMTree<String> = html!(
-            <div class="ml-10 mt-2 mb-4 flex gap-4">
+            <div style="margin:0.5rem 0 1rem 2.5rem;display:flex;gap:1rem">
                 <span>"Twitter:"</span>
                 <a
                     href="https://twitter.com/TimoPruesse"
-                    class="hover:underline"
                     target="_blank"
                     // rel="noopener noreferrer" // TODO: fix this
                 >"TimoPruesse"</a

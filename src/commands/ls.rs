@@ -13,18 +13,18 @@ impl TerminalCommand for LsCommand {
     fn run(&self) -> Result<String, String> {
         if self.args.len() == 0 {
             let body: DOMTree<String> = html!(
-            <div class="ml-8 mt-2 mb-4">
-                <div class="grid grid-flow-col grid-cols-auto-fit grid-rows-6 md:grid-rows-4 lg:grid-rows-3 xl:grid-rows-2 gap-x-4">
-                    <span class="text-turquoise whitespace-nowrap">"build"</span>
-                    <span class="whitespace-nowrap">"package.json"</span>
-                    <span class="whitespace-nowrap">"postcss.config.cjs"</span>
-                    <span class="text-turquoise whitespace-nowrap">"src"</span>
-                    <span class="whitespace-nowrap">"tsconfig.json"</span>
-                    <span class="text-turquoise whitespace-nowrap">"node_modules"</span>
-                    <span class="whitespace-nowrap">"package-lock.json"</span>
-                    <span class="whitespace-nowrap">"README.md"</span>
-                    <span class="text-turquoise whitespace-nowrap">"static"</span>
-                    <span class="whitespace-nowrap">"tailwind.config.cjs"</span>
+            <div style="margin:0.5rem 0 1rem 2rem">
+                <div class="file-list">
+                    <span class="highlight-file">"build"</span>
+                    <span>"package.json"</span>
+                    <span>"postcss.config.cjs"</span>
+                    <span class="highlight-file">"src"</span>
+                    <span>"tsconfig.json"</span>
+                    <span class="highlight-file">"node_modules"</span>
+                    <span>"package-lock.json"</span>
+                    <span>"README.md"</span>
+                    <span class="highlight-file">"static"</span>
+                    <span>"tailwind.config.cjs"</span>
                 </div>
             </div>
             );
