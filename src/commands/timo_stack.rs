@@ -13,7 +13,7 @@ impl TerminalCommand for TimoStackCommand {
         <div class="info-row">
             <span>"Languages:"</span>
             <div class="info-box">
-                <div style="padding-right:0.5rem">
+                <div>
                     <span style="font-weight:700;font-size:0.875rem;line-height:1.25rem">"Daily Drivers"</span>
                     <span>"JavaScript/TypeScript, PHP, HTML, CSS"</span>
                 </div>
@@ -26,7 +26,7 @@ impl TerminalCommand for TimoStackCommand {
         <div class="info-row">
             <span>"Frameworks:"</span>
             <div class="info-box">
-                <div style="padding-right:0.5rem">
+                <div>
                     <span style="font-weight:700;font-size:0.875rem;line-height:1.25rem">"Daily Drivers"</span>
                     <span>"Laravel, Svelte/SvelteKit, React"</span>
                 </div>
@@ -39,7 +39,7 @@ impl TerminalCommand for TimoStackCommand {
         <div class="info-row">
             <span>"Testing:"</span>
             <div class="info-box">
-                <div style="padding-right:0.5rem">
+                <div>
                     <span style="font-weight:700;font-size:0.875rem;line-height:1.25rem">"Daily Drivers"</span>
                     <span>"Jest, PHPUnit, React Testing Library"</span>
                 </div>
@@ -52,7 +52,7 @@ impl TerminalCommand for TimoStackCommand {
         <div class="info-row">
             <span>"Data Stores:"</span>
             <div class="info-box">
-                <div style="padding-right:0.5rem">
+                <div>
                     <span style="font-weight:700;font-size:0.875rem;line-height:1.25rem">"Daily Drivers"</span>
                     <span>"AWS RDS, MySQL, Redis"</span>
                 </div>
@@ -65,7 +65,7 @@ impl TerminalCommand for TimoStackCommand {
         <div class="info-row">
             <span>"Cloud/Deployment:"</span>
             <div class="info-box">
-                <div style="padding-right:0.5rem">
+                <div>
                     <span style="font-weight:700;font-size:0.875rem;line-height:1.25rem">"Daily Drivers"</span>
                     <span>"AWS, DigitalOcean"</span>
                 </div>
@@ -78,7 +78,7 @@ impl TerminalCommand for TimoStackCommand {
         <div class="info-row">
             <span>"AI/Data Science:"</span>
             <div class="info-box">
-                <div style="padding-right:0.5rem">
+                <div>
                     <span style="font-weight:700;font-size:0.875rem;line-height:1.25rem">"Daily Drivers"</span>
                     <span>"-"</span>
                 </div>
