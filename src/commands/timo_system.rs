@@ -13,9 +13,9 @@ impl TerminalCommand for TimoSystemCommand {
             <table class="info-table">
                 <tr><th colspan="2">"WSL 2"</th></tr>
                 <tr><td style="padding-top:0.5rem">"Distributor ID"</td><td style="padding-top:0.5rem">"Ubuntu"</td></tr>
-                <tr><td>"Description"</td><td>"Ubuntu 20.04.4 LTS"</td></tr>
-                <tr><td>"Release"</td><td>"20.04"</td></tr>
-                <tr><td>"Codename"</td><td>"focal"</td></tr>
+                <tr><td>"Description"</td><td>"Ubuntu Jammy Jellyfish (development branch)"</td></tr>
+                <tr><td>"Release"</td><td>"22.04"</td></tr>
+                <tr><td>"Codename"</td><td>"jammy"</td></tr>
             </table>
         </div>
         );

@@ -1,6 +1,6 @@
 [package]
 name = "timo_pruesse_wasm_terminal"
-version = "1.3.5"
+version = "1.3.6"
 edition = "2021"
 description = "A \"terminal interpreter\" for the commands that you can run on timo-pruesse.de"
 repository = "https://github.com/Chroma91/timo_pruesse_wasm_terminal"
